@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="bn" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#0f172a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="PromptBuilder">
+    <link rel="manifest" href="manifest.json">
+    <title>AI Prompt Builder v48.0 - Expanded Saree Types & Fabrics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate">
+
+    <!-- Toast Notification Container -->
+    <div id="toastContainer" class="toast-container"></div>
+
+    <main class="app-container">
+        
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-left">
+                <div class="logo-icon">✨</div>
+                <div>
+                    <h1 class="header-title">Prompt Builder <span class="version-tag">v48</span></h1>
+                    <p class="header-subtitle">Expanded Saree Varieties & Styles</p>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button onclick="toggleHistoryDrawer()" class="icon-btn" title="Saved History">
+                    📜 <span id="historyBadge" class="badge">0</span>
+                </button>
+                <button onclick="toggleCharacterModal()" class="icon-btn" title="Character Profile">
+                    👤
+                </button>
+            </div>
+        </header>
+
+        <!-- Quick Preset Chips Scroll -->
+        <section class="preset-section">
+            <span class="preset-label">Presets:</span>
+            <div class="preset-scroll">
+                <button onclick="applyPreset('bengaliPuja')" class="preset-chip">🌸 Traditional Bengali</button>
+                <button onclick="applyPreset('royalBanarasi')" class="preset-chip">👑 Royal Banarasi</button>
+                <button onclick="applyPreset('organzaGlam')" class="preset-chip">✨ Modern Organza</button>
+                <button onclick="applyPreset('kanjivaramBride')" class="preset-chip">🌺 Kanjivaram Bridal</button>
+                <button onclick="applyPreset('cocktailLycra')" class="preset-chip">🍸 Cocktail Party</button>
+            </div>
+        </section>
+
+        <!-- Active Character Indicator -->
+        <div class="character-card">
+            <div class="char-info">
+                <span class="char-avatar">🎭</span>
+                <div>
+                    <div class="char-name-row">
+                        <strong id="currentCharName">Avya Lumina</strong>
+                        <span class="char-tag">Identity Lock Active</span>
+                    </div>
+                    <p id="currentCharDesc" class="char-desc">Slightly healthy build, curvy silhouette, wider waist, full hips</p>
+                </div>
+            </div>
+            <button onclick="toggleCharacterModal()" class="btn-text">Edit ✏️</button>
+        </div>
+
+        <!-- Dynamic Visual Selectors Grid -->
+        <div id="selectorsGrid" class="selectors-grid"></div>
+
+        <!-- Extra Parameters (Aspect Ratio, Framing Options) -->
+        <div class="extra-params-card">
+            <div class="param-group">
+                <label for="aspectRatioSelect" class="param-label">Aspect Ratio</label>
+                <select id="aspectRatioSelect" onchange="updatePrompt()" class="param-select">
+                    <option value="9:16" selected>9:16 (Story / Reels / Portrait)</option>
+                    <option value="1:1">1:1 (Square)</option>
+                    <option value="16:9">16:9 (Landscape)</option>
+                    <option value="4:5">4:5 (Social Feed)</option>
+                </select>
+            </div>
+            <div class="param-group">
+                <label for="navelPositioningToggle" class="param-label">Outfit Navel Rule</label>
+                <select id="navelPositioningToggle" onchange="updatePrompt()" class="param-select">
+                    <option value="standard" selected>2-3 Inches Below Navel (Default)</option>
+                    <option value="high">High Waist Fit</option>
+                    <option value="custom">Omit Positioning Rule</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Output Prompt Area -->
+        <div class="prompt-output-section">
+            <div class="prompt-output-header">
+                <label for="positivePrompt" class="output-label">
+                    <span>Generated Master Prompt</span>
+                    <span class="live-dot">● Live Auto-Update</span>
+                </label>
+                <div class="prompt-tools">
+                    <button onclick="saveCurrentPrompt()" class="btn-tool">★ Save</button>
+                    <button onclick="clearAllSelections()" class="btn-tool danger">🔄 Reset</button>
+                </div>
+            </div>
+            <textarea id="positivePrompt" readonly class="prompt-textarea" placeholder="Generating prompt..."></textarea>
+        </div>
+
+    </main>
+
+    <!-- Bottom Sticky Action Bar -->
+    <div class="sticky-action-bar">
+        <div class="action-grid">
+            <button onclick="copyPrompt(event)" class="btn-action primary">
+                <span class="btn-icon">📋</span> Copy Prompt
+            </button>
+            <button onclick="downloadPrompt()" class="btn-action secondary">
+                <span class="btn-icon">💾</span> Download TXT
+            </button>
+        </div>
+    </div>
+
+    <!-- Visual Modal Gallery Screen -->
+    <div id="visualModal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h3 id="modalTitle" class="modal-title">SELECT OPTION</h3>
+                    <p class="modal-subtitle">ছবিতে ক্লিক করে সঠিক অপশন বেছে নিন</p>
+                </div>
+                <button onclick="closeModal()" class="btn-close">✕</button>
+            </div>
+
+            <!-- Search input inside modal -->
+            <div class="modal-search-wrapper">
+                <input type="text" id="modalSearchInput" placeholder="Search style, fabric or jewelry..." oninput="filterModalOptions()" class="modal-search-input">
+            </div>
+            
+            <!-- Large Visual Card Grid -->
+            <div id="modalOptionsContainer" class="modal-grid"></div>
+        </div>
+    </div>
+
+    <!-- Saved History Drawer -->
+    <div id="historyDrawer" class="modal-backdrop hidden">
+        <div class="drawer-content">
+            <div class="modal-header">
+                <div>
+                    <h3 class="modal-title">SAVED PROMPTS HISTORY</h3>
+                    <p class="modal-subtitle">আপনার সংরক্ষিত প্রম্পটসমূহ</p>
+                </div>
+                <button onclick="toggleHistoryDrawer()" class="btn-close">✕</button>
+            </div>
+            <div id="historyListContainer" class="history-list"></div>
+        </div>
+    </div>
+
+    <!-- Character Profile Modal -->
+    <div id="characterModal" class="modal-backdrop hidden">
+        <div class="modal-content text-left">
+            <div class="modal-header">
+                <div>
+                    <h3 class="modal-title">IDENTITY LOCK PROFILE</h3>
+                    <p class="modal-subtitle">ক্যারেক্টার প্রোফাইল ও বডি ডেসক্রিপশন</p>
+                </div>
+                <button onclick="toggleCharacterModal()" class="btn-close">✕</button>
+            </div>
+            <div class="char-form space-y-3">
+                <div class="input-group">
+                    <label for="charNameInput" class="input-label">Character Name</label>
+                    <input type="text" id="charNameInput" class="text-input" value="Avya Lumina">
+                </div>
+                <div class="input-group">
+                    <label for="charDescInput" class="input-label">Body Build & Features</label>
+                    <textarea id="charDescInput" class="textarea-input" rows="3">slightly healthy build, curvy silhouette, wider waist, full hips</textarea>
+                </div>
+                <button onclick="saveCharacterProfile()" class="btn-action primary w-full">Save Character Profile</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').then(reg => {
+                    console.log('PWA ServiceWorker registered with scope:', reg.scope);
+                }).catch(err => {
+                    console.warn('PWA ServiceWorker registration failed:', err);
+                });
+            });
+        }
+    </script>
+</body>
+</html>

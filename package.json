@@ -1,0 +1,17 @@
+{
+  "name": "prompt-builder-mobile",
+  "version": "1.0.0",
+  "description": "AI Image & Dance Video Prompt Generator Mobile App",
+  "main": "app.js",
+  "scripts": {
+    "copy-assets": "node build-mobile.js",
+    "cap:sync": "node build-mobile.js && npx cap sync android"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/cli": "^8.4.2",
+    "@capacitor/core": "^8.4.2"
+  }
+}

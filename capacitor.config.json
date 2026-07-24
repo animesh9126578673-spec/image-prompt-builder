@@ -1,0 +1,9 @@
+{
+  "appId": "com.promptmaster.app",
+  "appName": "Prompt Master",
+  "webDir": "www",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
