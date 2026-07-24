@@ -16,13 +16,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
-      - name: Install dependencies & sync Capacitor
+      - name: Install Capacitor & dependencies
         run: |
           npm install
+          npm install @capacitor/core @capacitor/cli @capacitor/android
           node build-mobile.js
-          npx cap add android
+          npx cap add android || true
           npx cap sync android
 
       - name: Set up Java JDK 17
@@ -35,6 +36,13 @@ jobs:
         run: |
           cd android
           chmod +x gradlew
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PromptMaster-Android-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk          chmod +x gradlew
           ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK Artifact
