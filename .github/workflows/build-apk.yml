@@ -22,6 +22,7 @@ jobs:
         run: |
           npm install
           node build-mobile.js
+          npx cap add android
           npx cap sync android
 
       - name: Set up Java JDK 17
@@ -35,6 +36,12 @@ jobs:
           cd android
           chmod +x gradlew
           ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: PromptMaster-Android-APK
+          path: android/app/build/outputs/apk/debug/app-debug.apk          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
