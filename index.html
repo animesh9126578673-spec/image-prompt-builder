@@ -31,6 +31,9 @@
                 </div>
             </div>
             <div class="header-actions">
+                <button onclick="toggleElementsModal()" class="icon-btn" title="7 Key Elements Guide">
+                    💡
+                </button>
                 <button onclick="toggleHistoryDrawer()" class="icon-btn" title="Saved History">
                     📜 <span id="historyBadge" class="badge">0</span>
                 </button>
@@ -65,6 +68,15 @@
                 </div>
             </div>
             <button onclick="toggleCharacterModal()" class="btn-text">Edit ✏️</button>
+        </div>
+
+        <!-- 7 Key Elements Filter Bar -->
+        <div class="elements-bar">
+            <div class="elements-bar-header">
+                <span class="elements-bar-title">✨ 7 Key Prompt Elements</span>
+                <button onclick="toggleElementsModal()" class="elements-guide-link">📖 View Guide</button>
+            </div>
+            <div id="elementsFilterChips" class="elements-chip-row"></div>
         </div>
 
         <!-- Dynamic Visual Selectors Grid -->
@@ -176,6 +188,64 @@
                 </div>
                 <button onclick="saveCharacterProfile()" class="btn-action primary w-full">Save Character Profile</button>
             </div>
+        </div>
+    </div>
+
+    <!-- 7 Key Elements Guide Modal -->
+    <div id="elementsModal" class="modal-backdrop hidden">
+        <div class="modal-content text-left">
+            <div class="modal-header">
+                <div>
+                    <h3 class="modal-title">7 KEY ELEMENTS OF A GREAT AI PROMPT</h3>
+                    <p class="modal-subtitle">AI ফটো প্রম্পটের ৭টি মৌলিক উপাদান ও নিয়মাবলি</p>
+                </div>
+                <button onclick="toggleElementsModal()" class="btn-close">✕</button>
+            </div>
+            <div class="elements-guide-scroll">
+                <!-- 1. Subject -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-1">1. Subject (বিষয়বস্তু ও ফোকাস)</div>
+                    <h4 class="guide-title">Who or what is the focus of the image?</h4>
+                    <p class="guide-desc">Be as clear as possible and avoid vague or confusing language. Includes character identity, anatomical hourglass build, saree & outfit drape, complete jewellery sets, hairstyle, makeup, and fixed traditional details (Sindoor, Shakha, Mehendi, Alta).</p>
+                </div>
+                <!-- 2. Action -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-2">2. Action (অ্যাকশন ও অঙ্গভঙ্গি)</div>
+                    <h4 class="guide-title">What is happening in the image?</h4>
+                    <p class="guide-desc">Use verbs and details to provide context. The more descriptive, the better. Includes Kathak classical dance mudras, flowing saree twirls, rhythmic steps, and emotive glances.</p>
+                </div>
+                <!-- 3. Style -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-3">3. Style (ভিজ্যুয়াল স্টাইল ও মাধ্যম)</div>
+                    <h4 class="guide-title">Aesthetic medium or format</h4>
+                    <p class="guide-desc">Specify whether you want a photorealistic image, cinematic film capture, or hyper-realistic masterpiece for optimal AI diffusion clarity.</p>
+                </div>
+                <!-- 4. Background -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-4">4. Background (পরিবেশ ও স্থান)</div>
+                    <h4 class="guide-title">Set the scene and location</h4>
+                    <p class="guide-desc">Describe the environment, time of day, and architecture. Choose from 100 realistic locations like royal palaces, Thakur Dalan, ghats, mustard fields, or ballroom dance floors.</p>
+                </div>
+                <!-- 5. Color & Lighting -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-5">5. Color & Lighting (রঙের প্যালেট ও আলো)</div>
+                    <h4 class="guide-title">Color palette and lighting capture</h4>
+                    <p class="guide-desc">Set overall tonal harmony (royal jewel tones, golden hour warmth, cinematic amber/teal) and lighting setup (soft golden hour, softbox key light, volumetric sunbeams).</p>
+                </div>
+                <!-- 6. Framing -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-6">6. Framing (ক্যামেরা ফ্রেমিং ও কম্পোজিশন)</div>
+                    <h4 class="guide-title">Shot distance & aspect ratio</h4>
+                    <p class="guide-desc">Full body wide angle shot, head-to-toe with 15% headroom margin above head, centered composition, and 9:16 portrait aspect ratio for motion clarity.</p>
+                </div>
+                <!-- 7. Mood -->
+                <div class="guide-card">
+                    <div class="guide-badge tag-7">7. Mood (মুড ও সামগ্রিক আবহ)</div>
+                    <h4 class="guide-title">How do you want the image to feel?</h4>
+                    <p class="guide-desc">Define emotional response: festive celebration, magical & dreamlike, tranquil & serene, royal majesty, or romantic grandeur.</p>
+                </div>
+            </div>
+            <button onclick="toggleElementsModal()" class="btn-action primary w-full">Got It! বুঝেছি</button>
         </div>
     </div>
 

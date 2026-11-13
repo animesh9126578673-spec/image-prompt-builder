@@ -274,6 +274,31 @@ const accurateVisuals = {
     "Sunlit Wildflower Meadow (বুনো ফুলে ভরা খোলা মেঠো প্রান্তর)": { img: "https://images.unsplash.com/photo-1499002238440-d264edd596ec?w=500&auto=format&fit=crop&q=80&rel_id=32", desc: "বুনো ফুলে ভরা প্রাকৃতিক উন্মুক্ত প্রান্তর" },
     "French Renaissance Palace Garden (ফরাসি রাজপ্রাসাদের সুসজ্জিত বাগান)": { img: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=500&auto=format&fit=crop&q=80&rel_id=33", desc: "সুসজ্জিত রাজকীয় বাগান ও ফোয়ারা" },
     "Puja Mandap & Alpona Floor (পূজামণ্ডপ ও সুন্দর আলপনা আঁকা মেঝে)": { img: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=500&auto=format&fit=crop&q=80&rel_id=34", desc: "রঙিন আলপনা ও পূজামণ্ডপের মেঝে" },
+
+    // 7 Key Elements Visual Mappings (Action, Overall Color, Mood)
+    "Kathak Classical Dance Mudra (কথক নৃত্য মুদ্রা ও হাতের ভঙ্গি)": { img: "https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=500&auto=format&fit=crop&q=80&act=1", desc: "ঐতিহ্যবাহী কথক নৃত্য মুদ্রা ও অঙ্গভঙ্গি" },
+    "Dynamic Saree Twirl & Spin (শাড়ির ঘের ও আঁচল উড়িয়ে ড্যান্স স্পিন)": { img: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=500&auto=format&fit=crop&q=80&act=2", desc: "নাচের তালে শাড়ির ঘের ও ওড়না ওড়ানোর দ্রুত ঘূর্ণন" },
+    "Graceful Walking with Flowing Pallu (বাতাসে আঁচল উড়িয়ে ছন্দময় পদক্ষেপ)": { img: "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=80&act=3", desc: "বাতাসে শাড়ির আঁচল উড়িয়ে ছন্দময় সাবলীল হাঁটার ভঙ্গি" },
+    "Festive Dandiya & Garba Rhythm (উৎসবমুখর ডান্ডিয়া ও গরবা নৃত্য ভঙ্গি)": { img: "https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=500&auto=format&fit=crop&q=80&act=4", desc: "উৎসবমুখর ডান্ডিয়া ও গরবা নাচের ছন্দময় নৃত্যভঙ্গি" },
+    "Expressive Eye & Facial Abhinaya (চোখ ও মুখের গভীর অভিব্যক্তিময় নৃত্য ভঙ্গি)": { img: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=80&act=5", desc: "শাস্ত্রীয় নৃত্যের ভাবপূর্ণ চোখ ও মুখের চমৎকার অভিনয়" },
+    "Graceful Adjusting Bangles & Jhumka (স্মিত হাসিতে চুড়ি ও কানের ঝুমকা ছোঁয়ার ভঙ্গি)": { img: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=500&auto=format&fit=crop&q=80&act=6", desc: "স্মিত মুখে হাতের চুড়ি ও কানের ঝুমকা স্পর্শ করার মার্জিত ভঙ্গি" },
+    "Candid Gentle Dance Step (সাবলীল স্বাভাবিক নৃত্যের পদক্ষেপ)": { img: "https://images.unsplash.com/photo-1469334031218-e382a71b716b?w=500&auto=format&fit=crop&q=80&act=7", desc: "ক্যানডিড ও সাবলীল ঘরোয়া নাচের পদক্ষেপ" },
+    "Royal Regal Standing Stance (রাজকীয় মার্জিত স্থির পোজ)": { img: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=500&auto=format&fit=crop&q=80&act=8", desc: "রাজকীয় আত্মবিশ্বাসী মার্জিত স্থির পোজ" },
+    "Rich Royal Jewel Tones (উজ্জ্বল রাজকীয় রত্ন রঙ)": { img: "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=500&auto=format&fit=crop&q=80&col=1", desc: "রুবি লাল, পান্না সবুজ ও স্যাফায়ার নীলের রাজকীয় প্যালেট" },
+    "Warm Golden & Earthy Tones (উষ্ণ সোনালী ও মাটির রঙ)": { img: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=500&auto=format&fit=crop&q=80&col=2", desc: "উষ্ণ সোনালী হলুদ, টেরাকোটা ও মাটির প্রাকৃতিক রঙ" },
+    "Pastel Aesthetic Soft Tones (নরম স্নিগ্ধ প্যাস্টেল রঙ)": { img: "https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&auto=format&fit=crop&q=80&col=3", desc: "কোমল ল্যাভেন্ডার, পিচ ও পুদিনা পাতার শান্ত প্যাস্টেল শেড" },
+    "Vibrant Festive Multi-Color (রঙিন বর্ণিল উৎসবের রঙ)": { img: "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=500&auto=format&fit=crop&q=80&col=4", desc: "উৎসবমুখর প্রাণবন্ত বহু রঙের ঝলমলে বিন্যাস" },
+    "Cinematic Teal & Warm Amber (সিনেমাটিক টিল ও উষ্ণ অ্যাম্বার)": { img: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=500&auto=format&fit=crop&q=80&col=5", desc: "হলিউড ধাঁচের সিনেমাটিক টিল ও অ্যাম্বার টোন" },
+    "Muted Vintage Film Tones (ভিন্টেজ মৃদু ফিল্ম টোন)": { img: "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=500&auto=format&fit=crop&q=80&col=6", desc: "মৃদু কন্ট্রাস্ট ও ক্লাসিক রেট্রো অ্যানালগ ফিল্ম রঙ" },
+    "Crisp High-Key Bright Tones (উজ্জ্বল পরিচ্ছন্ন হাই-কী টোন)": { img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=500&auto=format&fit=crop&q=80&col=7", desc: "উজ্জ্বল শুভ্র ও স্বচ্ছ আধুনিক আলো-রঙের বিন্যাস" },
+    "Deep Moody Contrast Tones (গভীর আলো-ছায়ার মুডি টোন)": { img: "https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?w=500&auto=format&fit=crop&q=80&col=8", desc: "গাঢ় ছায়া ও উজ্জ্বল হাইলাইটের ড্রামাটিক মুডি রঙ" },
+    "Festive & Joyful Celebration (উৎসবমুখর ও আনন্দময় অনুভূতি)": { img: "https://images.unsplash.com/photo-1519741497674-611481863552?w=500&auto=format&fit=crop&q=80&mood=1", desc: "আনন্দঘন, রঙিন ও উৎসবমুখর উচ্ছ্বাসের অনুভূতি" },
+    "Magical & Dreamlike Mood (মায়াবী ও স্বপ্নিল আবহ)": { img: "https://images.unsplash.com/photo-1519681393784-d120267933ba?w=500&auto=format&fit=crop&q=80&mood=2", desc: "রূপকথার মতো মায়াবী ও অপার্থিব স্বপ্নিল পরিবেশ" },
+    "Tranquil & Serene Atmosphere (শান্ত ও স্নিগ্ধ পরিবেশ)": { img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=500&auto=format&fit=crop&q=80&mood=3", desc: "নীরব, পবিত্র ও হৃদয় জুড়ানো শান্ত স্নিগ্ধ পরিবেশ" },
+    "Royal & Majestic Grandeur (রাজকীয় ও মহিমান্বিত ভাব)": { img: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?w=500&auto=format&fit=crop&q=80&mood=4", desc: "অভিজাত ও অত্যন্ত মহিমান্বিত রাজকীয় গাম্ভীর্য" },
+    "Energetic Rhythm & Dance Vibe (উচ্ছ্বল নৃত্য ও ছন্দের স্পন্দন)": { img: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&auto=format&fit=crop&q=80&mood=5", desc: "প্রাণচঞ্চল নৃত্য ও দ্রুত ছন্দের গতিশীল স্পন্দন" },
+    "Romantic & Ethereal Glow (রোমান্টিক ও স্বর্গীয় অনুভূতি)": { img: "https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=500&auto=format&fit=crop&q=80&mood=6", desc: "নরম মিষ্টি ভালোবাসাময় ও স্বর্গীয় মোহনীয় আভা" },
+    "Dramatic & Intense Emotion (ড্রামাটিক ও গভীর অনুভূতি)": { img: "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=500&auto=format&fit=crop&q=80&mood=7", desc: "গভীর আবেগঘন ও শক্তিশালী ড্রামাটিক থিয়েট্রিক্যাল ভাব" },
 };
 
 const colorPalette = {
@@ -413,25 +438,82 @@ const backgroundOptions100 = [
     "Custom (কাস্টম ডেসক্রিপশন)"
 ];
 
-// Complete Input Option Cards
+// Complete Input Option Cards mapped directly to the 7 Key Elements of a Great AI Prompt
+const elementMeta = {
+    all: { name: "All (19)", icon: "✨" },
+    1: { name: "1. Subject (12)", icon: "👤", label: "Element 1: Subject", class: "tag-1" },
+    2: { name: "2. Action (1)", icon: "💃", label: "Element 2: Action", class: "tag-2" },
+    3: { name: "3. Style (1)", icon: "🎨", label: "Element 3: Style", class: "tag-3" },
+    4: { name: "4. Background (1)", icon: "🏛️", label: "Element 4: Background", class: "tag-4" },
+    5: { name: "5. Color (2)", icon: "🌈", label: "Element 5: Color & Light", class: "tag-5" },
+    6: { name: "6. Framing (1)", icon: "📐", label: "Element 6: Framing", class: "tag-6" },
+    7: { name: "7. Mood (1)", icon: "✨", label: "Element 7: Mood", class: "tag-7" }
+};
+
+let activeElementFilter = 'all';
+
 const dropdownData = {
-    visualStyle: { label: "1. Visual Style", options: ["Realistic (বাস্তবসম্মত)", "Cinematic (সিনেমাটিক)", "Hyper-Realistic (হাইপার-রিয়েলিস্টিক)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    outfitType: { label: "2. Outfit Category", options: Object.keys(outfitStylesMap) },
-    outfitStyle: { label: "3. Style / Drape / Fabric", options: outfitStylesMap["Saree (শাড়ি)"] },
-    outfitColor: { label: "4. Outfit Color", options: Object.keys(colorPalette) },
-    dupattaStyle: { label: "5. Dupatta / Veil / Orna (ওড়না)", options: ["Sheer Net Dupatta on Head (মাথায় ঘৌংঘাট / ওড়না)", "Draped over Both Shoulders (দুই কাঁধে ওড়না)", "One-Side Drape (একপাশে ওড়না)", "Royal Long Veil / Train (রাজকীয় লম্বা ওড়না)", "No Dupatta / Orna (ওড়না ছাড়া)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    waistAccessory: { label: "6. Waist Belt / Kamarbandh", options: ["Gold Kamarbandh (কোমরবন্ধ)", "Temple Waist Chain", "Embroidered Waist Belt", "No Waist Belt", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    headJewellery: { label: "7. Head Jewellery", options: ["Maang Tikka (মাংটিকা)", "Matha Patti (মাথা পট্টি)", "Floral Crown (ফুলের মুকুট)", "Passa / Jhumar (পাশা)", "No Head Jewellery (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    noseJewellery: { label: "8. Nose Jewellery / Nath (নাকের গয়না)", options: ["Traditional Nath (ঐতিহ্যবাহী বড় নথ)", "Marathi Nath (মারাঠি নথ)", "Pearl & Stone Nolok (নোলক)", "Diamond Nose Stud (নাকের পিন / স্টাড)", "No Nose Ring (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    neckJewellery: { label: "9. Neck Jewellery", options: ["Choker (চোকার)", "Long Necklace (লং হার)", "Rani Haar (রানি হার)", "Pendant Set (পেন্ডেন্ট)", "Temple Jewellery Set (টেম্পল গয়না)", "No Necklace (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    earJewellery: { label: "10. Ear Jewellery", options: ["Jhumka (ঝুমকা)", "Chandbali (চাঁদবালি)", "Studs (দানা)", "No Earring (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    wristJewellery: { label: "11. Wrist Jewellery", options: ["Shakha (শাখা)", "Gold Bangles (সোনার চুড়ি)", "None (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    hairstyle: { label: "12. Hairstyle (20 Styles)", options: ["Traditional Bun with Gajra (গজরা সজ্জিত ঐতিহ্যবাহী খোঁপা)","Loose Wavy Waves (খোলা সফট ওয়েভি চুল)","Classic South Indian Braid (ফুলের মালা সজ্জিত দীর্ঘ বেণী)","Messy Textured Bun (মেসি টেক্সচার্ড খোঁপা)","Half-Up Half-Down Drape (হাফ-আপ খোলা চুল)","French Braid (ফ্রাঞ্চ বেণী)","Fishtail Braid (ফিশটেইল বেণী)","High Sleek Ponytail (হাই স্লিক পনিটেল)","Crown Braid with Open Hair (ক্রাউন বেণীসহ খোলা চুল)","Side-Swept Curls (একপাশে ঝরনা কার্ল চুল)","Low Royal Chignon (লো রয়্যাল শিফন খোঁপা)","Vintage Hollywood Waves (ভিনটেজ ওয়েভি কার্ল)","Gajra Wrapped Braid (সম্পূর্ণ গজরা মোড়ানো দীর্ঘ বেণী)","Voluminous Curls (ভলিউমিনাস রয়্যাল কার্ল)","Straight Sleek Hair (স্ট্রেইট সিল্কি সোজা চুল)","Boho Braided Bun (বোহো স্টাইল খোঁপা)","Bubble Ponytail (বাবল পনিটেল)","Twisted Side Bun (টুইস্টেড সাইড খোঁপা)","Short Curly Pixie (শর্ট কার্লি স্টাইল)","Custom (কাস্টম ডেসক্রিপশন)"] },
-    makeupStyle: { label: "13. Makeup & Bindi", options: ["Traditional Red Bindi & Kohl", "Glamorous Nude Makeup", "Heavy Bridal Makeup", "Natural Gloss", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    expressionPose: { label: "14. Pose & Expression", options: ["Graceful Gentle Smile", "Royal Regal Stance", "Candid Elegant Glance", "Confident Fashion Pose", "Custom (কাস্টম ডেসক্রিপশন)"] },
-    backgroundSetting: { label: "15. Background & Setting (100 Options)", options: backgroundOptions100 },
-    lightingStyle: { label: "16. Lighting & Mood (15 Styles)", options: ["Bright Natural Daylight (উজ্জ্বল দিনের স্বাভাবিক আলো)","Soft Golden Hour Sunset (সোনারাঙা গোধূলির নরম আলো)","Morning Sunbeams & Sun Flare (সকালের সোনালী রোদের আলো)","Soft Overcast Diffused Daylight (মেঘলা দিনের সফট ডিফিউজড আলো)","Midday Sunlit Rays (দুপুরের উজ্জ্বল রোদের আলো)","Studio Softbox Key Light (স্টুডিও সফটবক্স প্রফেশনাল আলো)","Dramatic Cinematic Chiaroscuro (সিনেমাটিক আলো-ছায়ার বৈপরীত্য)","Warm Candlelight Glow (উষ্ণ মোমবাতির আলো)","Moody Neon Night Cyber Glow (নাইট নিয়ন সাইবার গ্লো)","Fairy Lights Ambient Bokeh (হাজারো লাইটের বোকাহ আলো)","Twilight Blue Hour Glow (সন্ধ্যার নীল গোধূলি আলো)","High-Key Bright White Light (সম্পূর্ণ উজ্জ্বল সাদা আলো)","Low-Key Dark Shadow Light (ছায়াময় ড্রামাটিক ডার্ক আলো)","Volumetric Sunbeams Through Window (জানালার ফাঁক দিয়ে আসা রোদ)","Custom (কাস্টম ডেসক্রিপশন)"] },
-    cameraDistance: { label: "17. Camera Distance", options: ["Full Body (মাথা থেকে পা পর্যন্ত সম্পূর্ণ ও মাথার উপর ১৫% ফাঁকা)", "Full Body Wide (৭০% জুমড আউট - চারপাশে ৩০% মেঠো প্রান্তর)", "Half Body (কোমর থেকে ওপরের অংশ)", "Close-Up Portrait (মুখমণ্ডল ও গহনার ক্লোজ-আপ)", "Custom (কাস্টম ডেসক্রিপশন)"] }
+    // Element 1: Subject (Character, Outfits, Draping, Jewelry, Hair, Makeup)
+    outfitType: { element: 1, label: "Outfit Category (পোশাকের ধরন)", options: Object.keys(outfitStylesMap) },
+    outfitStyle: { element: 1, label: "Style / Drape / Fabric (কাপড় ও পরার ধরন)", options: outfitStylesMap["Saree (শাড়ি)"] },
+    outfitColor: { element: 1, label: "Outfit Color (পোশাকের রঙ)", options: Object.keys(colorPalette) },
+    dupattaStyle: { element: 1, label: "Dupatta / Veil / Orna (ওড়না বা ওড়নার স্টাইল)", options: ["Sheer Net Dupatta on Head (মাথায় ঘৌংঘাট / ওড়না)", "Draped over Both Shoulders (দুই কাঁধে ওড়না)", "One-Side Drape (একপাশে ওড়না)", "Royal Long Veil / Train (রাজকীয় লম্বা ওড়না)", "No Dupatta / Orna (ওড়না ছাড়া)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    waistAccessory: { element: 1, label: "Waist Belt / Kamarbandh (কোমরবন্ধ)", options: ["Gold Kamarbandh (কোমরবন্ধ)", "Temple Waist Chain", "Embroidered Waist Belt", "No Waist Belt", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    headJewellery: { element: 1, label: "Head Jewellery (মাথার গয়না)", options: ["Maang Tikka (মাংটিকা)", "Matha Patti (মাথা পট্টি)", "Floral Crown (ফুলের মুকুট)", "Passa / Jhumar (পাশা)", "No Head Jewellery (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    noseJewellery: { element: 1, label: "Nose Jewellery / Nath (নাকের গয়না)", options: ["Traditional Nath (ঐতিহ্যবাহী বড় নথ)", "Marathi Nath (মারাঠি নথ)", "Pearl & Stone Nolok (নোলক)", "Diamond Nose Stud (নাকের পিন / স্টাড)", "No Nose Ring (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    neckJewellery: { element: 1, label: "Neck Jewellery (গলার হার)", options: ["Choker (চোকার)", "Long Necklace (লং হার)", "Rani Haar (রানি হার)", "Pendant Set (পেন্ডেন্ট)", "Temple Jewellery Set (টেম্পল গয়না)", "No Necklace (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    earJewellery: { element: 1, label: "Ear Jewellery (কানের গয়না)", options: ["Jhumka (ঝুমকা)", "Chandbali (চাঁদবালি)", "Studs (দানা)", "No Earring (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    wristJewellery: { element: 1, label: "Wrist Jewellery (হাতের অলঙ্কার)", options: ["Shakha (শাখা)", "Gold Bangles (সোনার চুড়ি)", "None (কিছুই না)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+    hairstyle: { element: 1, label: "Hairstyle (চুলের স্টাইল)", options: ["Traditional Bun with Gajra (গজরা সজ্জিত ঐতিহ্যবাহী খোঁপা)","Loose Wavy Waves (খোলা সফট ওয়েভি চুল)","Classic South Indian Braid (ফুলের মালা সজ্জিত দীর্ঘ বেণী)","Messy Textured Bun (মেসি টেক্সচার্ড খোঁপা)","Half-Up Half-Down Drape (হাফ-আপ খোলা চুল)","French Braid (ফ্রাঞ্চ বেণী)","Fishtail Braid (ফিশটেইল বেণী)","High Sleek Ponytail (হাই স্লিক পনিটেল)","Crown Braid with Open Hair (ক্রাউন বেণীসহ খোলা চুল)","Side-Swept Curls (একপাশে ঝরনা কার্ল চুল)","Low Royal Chignon (লো রয়্যাল শিফন খোঁপা)","Vintage Hollywood Waves (ভিনটেজ ওয়েভি কার্ল)","Gajra Wrapped Braid (সম্পূর্ণ গজরা মোড়ানো দীর্ঘ বেণী)","Voluminous Curls (ভলিউমিনাস রয়্যাল কার্ল)","Straight Sleek Hair (স্ট্রেইট সিল্কি সোজা চুল)","Boho Braided Bun (বোহো স্টাইল খোঁপা)","Bubble Ponytail (বাবল পনিটেল)","Twisted Side Bun (টুইস্টেড সাইড খোঁপা)","Short Curly Pixie (শর্ট কার্লি স্টাইল)","Custom (কাস্টম ডেসক্রিপশন)"] },
+    makeupStyle: { element: 1, label: "Makeup & Bindi (মেকআপ ও টিপ)", options: ["Traditional Red Bindi & Kohl", "Glamorous Nude Makeup", "Heavy Bridal Makeup", "Natural Gloss", "Custom (কাস্টম ডেসক্রিপশন)"] },
+
+    // Element 2: Action (Movement, Dance, Pose)
+    actionPose: { element: 2, label: "Action & Movement (অ্যাকশন ও নৃত্য ভঙ্গি)", options: [
+        "Kathak Classical Dance Mudra (কথক নৃত্য মুদ্রা ও হাতের ভঙ্গি)",
+        "Dynamic Saree Twirl & Spin (শাড়ির ঘের ও আঁচল উড়িয়ে ড্যান্স স্পিন)",
+        "Graceful Walking with Flowing Pallu (বাতাসে আঁচল উড়িয়ে ছন্দময় পদক্ষেপ)",
+        "Festive Dandiya & Garba Rhythm (উৎসবমুখর ডান্ডিয়া ও গরবা নৃত্য ভঙ্গি)",
+        "Expressive Eye & Facial Abhinaya (চোখ ও মুখের গভীর অভিব্যক্তিময় নৃত্য ভঙ্গি)",
+        "Graceful Adjusting Bangles & Jhumka (স্মিত হাসিতে চুড়ি ও কানের ঝুমকা ছোঁয়ার ভঙ্গি)",
+        "Candid Gentle Dance Step (সাবলীল স্বাভাবিক নৃত্যের পদক্ষেপ)",
+        "Royal Regal Standing Stance (রাজকীয় মার্জিত স্থির পোজ)",
+        "Custom (কাস্টম ডেসক্রিপশন)"
+    ] },
+
+    // Element 3: Style (Visual Medium & Aesthetic)
+    visualStyle: { element: 3, label: "Visual Style (ভিজ্যুয়াল স্টাইল ও মাধ্যম)", options: ["Realistic (বাস্তবসম্মত)", "Cinematic (সিনেমাটিক)", "Hyper-Realistic (হাইপার-রিয়েলিস্টিক)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+
+    // Element 4: Background (Setting & Environment)
+    backgroundSetting: { element: 4, label: "Background & Setting (বাস্তবসম্মত স্থান)", options: backgroundOptions100 },
+
+    // Element 5: Color & Lighting (Color Palette & Lighting)
+    sceneColorPalette: { element: 5, label: "Overall Color Palette (ছবির কালার টোন)", options: [
+        "Rich Royal Jewel Tones (উজ্জ্বল রাজকীয় রত্ন রঙ)",
+        "Warm Golden & Earthy Tones (উষ্ণ সোনালী ও মাটির রঙ)",
+        "Pastel Aesthetic Soft Tones (নরম স্নিগ্ধ প্যাস্টেল রঙ)",
+        "Vibrant Festive Multi-Color (রঙিন বর্ণিল উৎসবের রঙ)",
+        "Cinematic Teal & Warm Amber (সিনেমাটিক টিল ও উষ্ণ অ্যাম্বার)",
+        "Muted Vintage Film Tones (ভিন্টেজ মৃদু ফিল্ম টোন)",
+        "Crisp High-Key Bright Tones (উজ্জ্বল পরিচ্ছন্ন হাই-কী টোন)",
+        "Deep Moody Contrast Tones (গভীর আলো-ছায়ার মুডি টোন)",
+        "Custom (কাস্টম ডেসক্রিপশন)"
+    ] },
+    lightingStyle: { element: 5, label: "Lighting Setup (আলোর বিন্যাস)", options: ["Bright Natural Daylight (উজ্জ্বল দিনের স্বাভাবিক আলো)","Soft Golden Hour Sunset (সোনারাঙা গোধূলির নরম আলো)","Morning Sunbeams & Sun Flare (সকালের সোনালী রোদের আলো)","Soft Overcast Diffused Daylight (মেঘলা দিনের সফট ডিফিউজড আলো)","Midday Sunlit Rays (দুপুরের উজ্জ্বল রোদের আলো)","Studio Softbox Key Light (স্টুডিও সফটবক্স প্রফেশনাল আলো)","Dramatic Cinematic Chiaroscuro (সিনেমাটিক আলো-ছায়ার বৈপরীত্য)","Warm Candlelight Glow (উষ্ণ মোমবাতির আলো)","Moody Neon Night Cyber Glow (নাইট নিয়ন সাইবার গ্লো)","Fairy Lights Ambient Bokeh (হাজারো লাইটের বোকাহ আলো)","Twilight Blue Hour Glow (সন্ধ্যার নীল গোধূলি আলো)","High-Key Bright White Light (সম্পূর্ণ উজ্জ্বল সাদা আলো)","Low-Key Dark Shadow Light (ছায়াময় ড্রামাটিক ডার্ক আলো)","Volumetric Sunbeams Through Window (জানালার ফাঁক দিয়ে আসা রোদ)","Custom (কাস্টম ডেসক্রিপশন)"] },
+
+    // Element 6: Framing (Framing & Composition)
+    cameraDistance: { element: 6, label: "Camera Framing (ক্যামেরা ফ্রেমিং ও অ্যাঙ্গেল)", options: ["Full Body (মাথা থেকে পা পর্যন্ত সম্পূর্ণ ও মাথার উপর ১৫% ফাঁকা)", "Full Body Wide (৭০% জুমড আউট - চারপাশে ৩০% মেঠো প্রান্তর)", "Half Body (কোমর থেকে ওপরের অংশ)", "Close-Up Portrait (মুখমণ্ডল ও গহনার ক্লোজ-আপ)", "Custom (কাস্টম ডেসক্রিপশন)"] },
+
+    // Element 7: Mood (Atmosphere & Emotion)
+    moodAtmosphere: { element: 7, label: "Mood & Atmosphere (মুড ও পরিবেশের অনুভূতি)", options: [
+        "Festive & Joyful Celebration (উৎসবমুখর ও আনন্দময় অনুভূতি)",
+        "Magical & Dreamlike Mood (মায়াবী ও স্বপ্নিল আবহ)",
+        "Tranquil & Serene Atmosphere (শান্ত ও স্নিগ্ধ পরিবেশ)",
+        "Royal & Majestic Grandeur (রাজকীয় ও মহিমান্বিত ভাব)",
+        "Energetic Rhythm & Dance Vibe (উচ্ছ্বল নৃত্য ও ছন্দের স্পন্দন)",
+        "Romantic & Ethereal Glow (রোমান্টিক ও স্বর্গীয় অনুভূতি)",
+        "Dramatic & Intense Emotion (ড্রামাটিক ও গভীর অনুভূতি)",
+        "Custom (কাস্টম ডেসক্রিপশন)"
+    ] }
 };
 
 // Global App State
@@ -445,10 +527,53 @@ let activeKey = null;
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
+    initElementsFilter();
     initGrid();
     updateHistoryBadge();
     updatePrompt();
 });
+
+// Render 7 Key Elements Filter Chips
+function initElementsFilter() {
+    const container = document.getElementById('elementsFilterChips');
+    if (!container) return;
+    container.innerHTML = "";
+
+    Object.keys(elementMeta).forEach(key => {
+        const item = elementMeta[key];
+        const btn = document.createElement('button');
+        btn.className = `element-filter-chip ${activeElementFilter === key ? 'active' : ''}`;
+        btn.innerHTML = `${item.icon} ${item.name}`;
+        btn.onclick = () => filterByElement(key);
+        container.appendChild(btn);
+    });
+}
+
+function filterByElement(elemKey) {
+    activeElementFilter = elemKey;
+    initElementsFilter();
+
+    const cards = document.querySelectorAll('.selector-card');
+    cards.forEach(card => {
+        const cardElem = card.getAttribute('data-element');
+        if (elemKey === 'all' || cardElem === elemKey) {
+            card.style.display = 'flex';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+
+// Toggle 7 Key Elements Guide Modal
+function toggleElementsModal() {
+    const modal = document.getElementById('elementsModal');
+    if (!modal) return;
+    if (modal.classList.contains('hidden')) {
+        modal.classList.remove('hidden');
+    } else {
+        modal.classList.add('hidden');
+    }
+}
 
 // Render Selector Grid
 function initGrid() {
@@ -461,9 +586,12 @@ function initGrid() {
 
         const card = document.createElement('div');
         card.className = "selector-card";
+        card.setAttribute('data-element', field.element);
+
         card.innerHTML = `
             <div class="selector-header">
                 <label class="selector-label">${field.label}</label>
+                <span class="element-tag tag-${field.element}">Element ${field.element}</span>
             </div>
             <button onclick="openModal('${key}')" class="selector-trigger">
                 <div class="trigger-left">
@@ -652,11 +780,12 @@ function updatePrompt() {
     Object.keys(dropdownData).forEach(key => attrs[key] = cleanPromptText(getValue(key)));
     
     const aspectRatio = document.getElementById('aspectRatioSelect')?.value || '9:16';
-    const navelRule = document.getElementById('navelPositioningToggle')?.value || 'standard';
 
-    let prompt = `REFERENCE IMAGES:\n1. Face Reference: Use for identity. 2. Body Reference: Use for build.\n\nSCENE DESCRIPTION:\n`;
-    prompt += `[Visual Style: ${attrs.visualStyle}]. [Identity Lock: ${activeCharacter.name}, ${activeCharacter.desc}]. `;
-    prompt += `[Body Anatomy (Fixed Rule): Well-proportioned aesthetic hourglass silhouette, comparatively wider and gracefully full waist and hips, harmonious curvy body structure, strictly not overweight or obese]. `;
+    let prompt = `REFERENCE IMAGES:\n1. Face Reference: Use for identity. 2. Body Reference: Use for build.\n\nSCENE DESCRIPTION (STRUCTURED BY THE 7 KEY ELEMENTS OF A GREAT AI PROMPT):\n`;
+    
+    // Element 1: Subject (Identity, Body Anatomy, Costume, Draping, Jewelry, Hair, Makeup, Permanent details)
+    prompt += `[1. SUBJECT]: Focus on character identity: ${activeCharacter.name}, ${activeCharacter.desc}. `;
+    prompt += `Body build & silhouette: well-proportioned aesthetic hourglass silhouette, comparatively wider and gracefully full waist and hips, curvy body structure, strictly not overweight. `;
     
     // Navel positioning rule: ALWAYS 3 inches below the navel for Saree, Lehenga & Ghagra outfits
     const rawOutfit = selectionsState.outfitType || "";
@@ -666,36 +795,51 @@ function updatePrompt() {
                                    rawOutfit.includes("Indo-Western");
     
     if (isMidriffExposedOutfit) {
-        prompt += `[Outfit Positioning (Fixed Rule): Lower-waist saree/lehenga/ghagra drape worn strictly 3 inches below the navel, revealing midriff]. `;
+        prompt += `Outfit positioning: lower-waist saree/lehenga/ghagra drape worn strictly 3 inches below the navel, revealing midriff. `;
     }
 
-    // Permanent Fixed Details: Red Sindoor on Sinthi, White Shakha on Wrists, Hand Mehendi & Foot Alta
-    prompt += `[Permanent Details (Fixed Rule): Traditional Red Sindoor powder applied along the hair parting (Sinthi), Authentic white conch-shell bangles (Shakha) worn on both wrists, Intricate Henna/Mehendi pattern on hands, Vibrant Red Alta dye on feet, direct eye contact]. `;
-    prompt += `[Costume: ${attrs.outfitType} - ${attrs.outfitStyle} in ${attrs.outfitColor}]. `;
-    prompt += `[Dupatta / Orna: ${attrs.dupattaStyle}]. `;
-    prompt += `[Waist Belt: ${attrs.waistAccessory}]. `;
-    prompt += `[Hairstyle: ${attrs.hairstyle}]. `;
-    prompt += `[Makeup & Bindi: ${attrs.makeupStyle}]. `;
-    prompt += `[Jewellery: ${attrs.headJewellery}, ${attrs.noseJewellery}, ${attrs.neckJewellery}, ${attrs.earJewellery}, ${attrs.wristJewellery}]. `;
-    prompt += `[Pose & Expression: ${attrs.expressionPose}]. `;
-    prompt += `[Background & Setting: ${attrs.backgroundSetting}]. `;
-    prompt += `[Lighting & Mood: ${attrs.lightingStyle}]. `;
-    
+    // Permanent Fixed Traditional Details
+    prompt += `Permanent traditional details: authentic Red Sindoor along hair parting (Sinthi), white conch-shell bangles (Shakha) on both wrists, intricate Henna/Mehendi pattern on hands, vibrant Red Alta dye on feet, direct eye contact. `;
+    prompt += `Costume: ${attrs.outfitType} - ${attrs.outfitStyle} in ${attrs.outfitColor}. `;
+    prompt += `Dupatta/Orna: ${attrs.dupattaStyle}. `;
+    prompt += `Waist Belt: ${attrs.waistAccessory}. `;
+    prompt += `Hairstyle: ${attrs.hairstyle}. `;
+    prompt += `Makeup & Bindi: ${attrs.makeupStyle}. `;
+    prompt += `Complete Jewellery Set: ${attrs.headJewellery}, ${attrs.noseJewellery}, ${attrs.neckJewellery}, ${attrs.earJewellery}, ${attrs.wristJewellery}. `;
+
+    // Element 2: Action (Dynamic verbs and movement)
+    prompt += `\n\n[2. ACTION]: Dynamic movement & gesture: ${attrs.actionPose}. `;
+
+    // Element 3: Style (Visual medium and aesthetic)
+    prompt += `\n\n[3. STYLE]: Visual medium & aesthetic: ${attrs.visualStyle}. `;
+
+    // Element 4: Background (Environment, setting, architecture & time of day)
+    prompt += `\n\n[4. BACKGROUND]: Environment, architectural setting & scene: ${attrs.backgroundSetting}. `;
+
+    // Element 5: Color & Lighting (Color palette and lighting setup)
+    prompt += `\n\n[5. COLOR & LIGHTING]: Overall color palette & tonal harmony: ${attrs.sceneColorPalette}. Lighting setup: ${attrs.lightingStyle}. `;
+
+    // Element 6: Framing (Framing and composition)
     const camDist = selectionsState.cameraDistance || "";
+    let framingText = "";
     if (camDist.includes("Full Body Wide")) {
-        prompt += `[Framing: Wide-angle full body shot, subject occupies 70% frame center, 30% margin on all sides, head to toe visible with 15% headroom above head]. `;
+        framingText = "Wide-angle full body shot, subject occupies 70% frame center, 30% margin on all sides, complete view from head to toe visible with 15% headroom above head, centered composition";
     } else if (camDist.includes("Full Body") || camDist.includes("Full")) {
-        prompt += `[Framing: Full body standing shot, complete view from head to toe including feet, 15% headroom margin above the head, centered subject]. `;
+        framingText = "Full body standing shot, complete view from head to toe including feet, 15% headroom margin above the head, centered subject";
     } else if (camDist.includes("Half")) {
-        prompt += `[Framing: Half body waist-up portrait framing]. `;
+        framingText = "Half body waist-up portrait framing, centered composition";
     } else if (camDist.includes("Close-Up")) {
-        prompt += `[Framing: Close-up facial portrait framing]. `;
+        framingText = "Close-up facial portrait framing, centered composition";
     } else {
-        prompt += `[Framing: ${attrs.cameraDistance}]. `;
+        framingText = attrs.cameraDistance;
     }
-    
-    prompt += `[AI Video Motion Optimization: High subject-to-background depth separation, wide 360-degree dance floor clearance for fluid spins and arm motion, clean edge isolation for video generation]. `;
-    prompt += `[Aspect Ratio: ${aspectRatio}]`;
+    prompt += `\n\n[6. FRAMING & COMPOSITION]: Framing: ${framingText}. Aspect Ratio: ${aspectRatio}. `;
+
+    // Element 7: Mood (Atmosphere and emotion)
+    prompt += `\n\n[7. MOOD]: Atmospheric mood & emotional feel: ${attrs.moodAtmosphere}. `;
+
+    // Video motion optimization tag
+    prompt += `\n\n[AI Video Motion Optimization]: High subject-to-background depth separation, wide 360-degree dance floor clearance for fluid spins and arm motion, clean edge isolation for video generation.`;
     
     const textarea = document.getElementById('positivePrompt');
     if (textarea) textarea.value = prompt;
