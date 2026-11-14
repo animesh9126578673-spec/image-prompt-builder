@@ -1771,6 +1771,134 @@ const dropdownData = {
     ] }
 };
 
+// Sub-Category Definitions for All Visual Selectors
+const subCategoryDefinitions = {
+    actionPose: {
+        "Classical Dance (কথক, ভরতনাট্যম ও ওড়িশি)": dropdownData.actionPose.options.slice(0, 20),
+        "Saree Twirls & Drape (শাড়ির ঘূর্ণন, আঁচল ও স্পিন)": dropdownData.actionPose.options.slice(20, 35),
+        "Royal Walks & Runway (রাজকীয় পদক্ষেপ ও রানওয়ে)": dropdownData.actionPose.options.slice(35, 50),
+        "Folk Dance & Festivals (গরবা, ধুনুচি ও লোকনৃত্য)": dropdownData.actionPose.options.slice(50, 65),
+        "Expressions & Abhinaya (লাজুক চাহনি, হাসি ও মুখভঙ্গি)": dropdownData.actionPose.options.slice(65, 80),
+        "Puja & Sacred Rituals (আরতি, প্রদীপ ও পুজো)": dropdownData.actionPose.options.slice(80, 92),
+        "Royal Poses & Architecture (রাজকীয় আয়েশ ও পোজ)": dropdownData.actionPose.options.slice(92, 106)
+    },
+    visualStyle: {
+        "Photography & Cinematic (ফটোগ্রাফি ও সিনেমাটিক)": dropdownData.visualStyle.options.slice(0, 11),
+        "3D, Digital & Game Art (থ্রিডি ও ডিজিটাল কনসেপ্ট)": dropdownData.visualStyle.options.slice(11, 18),
+        "Classical Fine Art (অয়েল পেইন্টিং ও রেনেসাঁ)": dropdownData.visualStyle.options.slice(18, 28),
+        "Indian Heritage Art (রাজা রবি বর্মা ও ঐতিহ্য)": dropdownData.visualStyle.options.slice(28, 34),
+        "Anime, Manga & Asian (অ্যানিমে, মাঙ্গা ও এশিয়ান আর্ট)": dropdownData.visualStyle.options.slice(34, 39),
+        "Modern Pop & Graphic (পপ আর্ট ও কমিক)": dropdownData.visualStyle.options.slice(39, 45)
+    },
+    backgroundSetting: {
+        "Palaces & Forts (রাজপ্রাসাদ ও কেল্লা)": backgroundCategoryMap["Palaces, Forts & Royal Architecture (রাজপ্রাসাদ, দুর্গ ও ঐতিহাসিক স্থাপত্য)"] || [],
+        "Zamindar & Thakur Dalan (জমিদার বাড়ি ও ঠাকুরদালান)": backgroundCategoryMap["Zamindar Mansions & Thakur Dalan (ঐতিহ্যবাহী জমিদার বাড়ি ও ঠাকুরদালান)"] || [],
+        "Bengal Villages & Ghats (বাংলার গ্রাম ও ঘাট)": backgroundCategoryMap["Bengal Villages, Riverbanks & Ganga Ghats (বাংলার শান্ত গ্রাম, নদী ও গঙ্গার বাঁধাল ঘাট)"] || [],
+        "Puja Mandaps & Festivals (পূজামণ্ডপ ও উৎসব)": backgroundCategoryMap["Puja Mandaps & Festive Celebrations (পূজামণ্ডপ, বিবাহ ও বর্ণিল উৎসব)"] || [],
+        "Nature & Mustard Fields (সরিষা খেত ও প্রকৃতি)": backgroundCategoryMap["Natural Landscapes & Scenic Open Air (উন্মুক্ত প্রকৃতি, সরিষা খেত ও বন)"] || [],
+        "Historic Sacred Temples (ঐতিহাসিক প্রাচীন মন্দির)": backgroundCategoryMap["Historic Temples & Sacred Heritage (ঐতিহাসিক প্রাচীন মন্দির ও আধ্যাত্মিক স্থান)"] || [],
+        "Modern Luxury Ballrooms (বিলাসবহুল বলরুম)": backgroundCategoryMap["Modern Luxury, Ballrooms & Urban Spaces (আধুনিক বিলাসবহুল আর্কিটেকচার ও বলরুম)"] || [],
+        "Cinematic Dance Stages (সিনেমাটিক স্টেজ ও সেট)": backgroundCategoryMap["Cinematic Dance Stages, Studios & Night Sets (সিনেমাটিক ড্যান্স স্টেজ ও স্টুডিও)"] || []
+    },
+    hairstyle: {
+        "Traditional Buns (গজরা সজ্জিত খোঁপা)": dropdownData.hairstyle.options.slice(0, 7),
+        "Royal Long Braids (দীর্ঘ বেণী ও পরান্দি)": dropdownData.hairstyle.options.slice(7, 14),
+        "Open Hair & Curls (খোলা চুল ও ওয়েভি কার্ল)": dropdownData.hairstyle.options.slice(14, 21),
+        "Contemporary & Ponytails (আধুনিক ও পনিটেল)": dropdownData.hairstyle.options.slice(21, 25)
+    },
+    makeupStyle: {
+        "Traditional Bindi & Chandan (টিপ ও চন্দন আর্ট)": dropdownData.makeupStyle.options.slice(0, 6),
+        "Royal Bridal & Glamour (ব্রাইডাল গ্ল্যামার)": dropdownData.makeupStyle.options.slice(6, 10),
+        "Dewy, Nude & Minimal (নিউড ও স্নিগ্ধ মেকআপ)": dropdownData.makeupStyle.options.slice(10, 15)
+    },
+    sceneColorPalette: {
+        "Royal Jewel & Gold (রাজকীয় রত্ন ও সোনা)": [
+            dropdownData.sceneColorPalette.options[0], dropdownData.sceneColorPalette.options[1],
+            dropdownData.sceneColorPalette.options[8], dropdownData.sceneColorPalette.options[9],
+            dropdownData.sceneColorPalette.options[10], dropdownData.sceneColorPalette.options[18],
+            dropdownData.sceneColorPalette.options[24]
+        ].filter(Boolean),
+        "Cinematic & Moody (সিনেমাটিক ও মুডি ডার্ক)": [
+            dropdownData.sceneColorPalette.options[2], dropdownData.sceneColorPalette.options[7],
+            dropdownData.sceneColorPalette.options[13], dropdownData.sceneColorPalette.options[14],
+            dropdownData.sceneColorPalette.options[17], dropdownData.sceneColorPalette.options[21],
+            dropdownData.sceneColorPalette.options[23]
+        ].filter(Boolean),
+        "Earthy & Terracotta (মাটির রঙ ও অরণ্য)": [
+            dropdownData.sceneColorPalette.options[11], dropdownData.sceneColorPalette.options[12],
+            dropdownData.sceneColorPalette.options[16], dropdownData.sceneColorPalette.options[22]
+        ].filter(Boolean),
+        "Pastel & Vibrant (স্নিগ্ধ প্যাস্টেল ও বসন্ত)": [
+            dropdownData.sceneColorPalette.options[3], dropdownData.sceneColorPalette.options[4],
+            dropdownData.sceneColorPalette.options[5], dropdownData.sceneColorPalette.options[6],
+            dropdownData.sceneColorPalette.options[15], dropdownData.sceneColorPalette.options[19],
+            dropdownData.sceneColorPalette.options[20], dropdownData.sceneColorPalette.options[25]
+        ].filter(Boolean)
+    },
+    lightingStyle: {
+        "Natural Daylight & Sunset (সূর্যাস্ত ও দিনের আলো)": [
+            dropdownData.lightingStyle.options[0], dropdownData.lightingStyle.options[1],
+            dropdownData.lightingStyle.options[2], dropdownData.lightingStyle.options[3],
+            dropdownData.lightingStyle.options[4], dropdownData.lightingStyle.options[11],
+            dropdownData.lightingStyle.options[19], dropdownData.lightingStyle.options[23]
+        ].filter(Boolean),
+        "Studio & Beauty Portrait (স্টুডিও সফটবক্স ও রিমব্রান্ট)": [
+            dropdownData.lightingStyle.options[5], dropdownData.lightingStyle.options[12],
+            dropdownData.lightingStyle.options[14], dropdownData.lightingStyle.options[15],
+            dropdownData.lightingStyle.options[17], dropdownData.lightingStyle.options[24]
+        ].filter(Boolean),
+        "Candlelight, Diya & Glow (মোমবাতি, প্রদীপ ও বোকাহ)": [
+            dropdownData.lightingStyle.options[7], dropdownData.lightingStyle.options[8],
+            dropdownData.lightingStyle.options[9], dropdownData.lightingStyle.options[10],
+            dropdownData.lightingStyle.options[18], dropdownData.lightingStyle.options[21]
+        ].filter(Boolean),
+        "Cinematic Dramatic Shadows (সিনেমাটিক আলো-ছায়া ও স্পটলাইট)": [
+            dropdownData.lightingStyle.options[6], dropdownData.lightingStyle.options[13],
+            dropdownData.lightingStyle.options[16], dropdownData.lightingStyle.options[20],
+            dropdownData.lightingStyle.options[22], dropdownData.lightingStyle.options[25]
+        ].filter(Boolean)
+    },
+    cameraDistance: {
+        "Full Body & Environmental (ফুল বডি শট)": [
+            dropdownData.cameraDistance.options[0], dropdownData.cameraDistance.options[1],
+            dropdownData.cameraDistance.options[2], dropdownData.cameraDistance.options[3],
+            dropdownData.cameraDistance.options[4], dropdownData.cameraDistance.options[5],
+            dropdownData.cameraDistance.options[12]
+        ].filter(Boolean),
+        "Half Body & Portrait (হাফ বডি ও মিড শট)": [
+            dropdownData.cameraDistance.options[6], dropdownData.cameraDistance.options[7],
+            dropdownData.cameraDistance.options[8], dropdownData.cameraDistance.options[11]
+        ].filter(Boolean),
+        "Close-Up & Macro (ক্লোজ-আপ ও অলঙ্কার)": [
+            dropdownData.cameraDistance.options[9], dropdownData.cameraDistance.options[10],
+            dropdownData.cameraDistance.options[20], dropdownData.cameraDistance.options[21]
+        ].filter(Boolean),
+        "Cinematic Angles & Composition (সিনেমাটিক দৃষ্টিকোণ)": [
+            dropdownData.cameraDistance.options[13], dropdownData.cameraDistance.options[14],
+            dropdownData.cameraDistance.options[15], dropdownData.cameraDistance.options[16],
+            dropdownData.cameraDistance.options[17], dropdownData.cameraDistance.options[18],
+            dropdownData.cameraDistance.options[19], dropdownData.cameraDistance.options[22]
+        ].filter(Boolean)
+    },
+    moodAtmosphere: {
+        "Festive & Joyful (উৎসবমুখর ও আনন্দময়)": dropdownData.moodAtmosphere.options.slice(0, 6),
+        "Spiritual & Devotional (আধ্যাত্মিক ও ভক্তিপূর্ণ)": dropdownData.moodAtmosphere.options.slice(6, 12),
+        "Royal & Majestic (রাজকীয় ও মহিমান্বিত)": dropdownData.moodAtmosphere.options.slice(12, 17),
+        "Romantic & Ethereal (রোমান্টিক ও মায়াবী)": dropdownData.moodAtmosphere.options.slice(17, 24),
+        "Dramatic & Mysterious (নাটকীয় ও রহস্যময়)": dropdownData.moodAtmosphere.options.slice(24, 30),
+        "Calm & Solitude (শান্ত, উষ্ণ ও একাকী)": dropdownData.moodAtmosphere.options.slice(30, 35)
+    },
+    outfitColor: {
+        "Reds, Crimson & Maroon (লাল ও মেরুন)": dropdownData.outfitColor.options.slice(0, 15),
+        "Gold, Yellow & Ochre (সোনালী ও হলুদ)": dropdownData.outfitColor.options.slice(15, 30),
+        "Greens & Emerald (সবুজ ও পান্না)": dropdownData.outfitColor.options.slice(30, 45),
+        "Blues & Peacock Indigo (নীল ও ময়ূরকণ্ঠী)": dropdownData.outfitColor.options.slice(45, 60),
+        "Pinks, Magenta & Purple (গোলাপী ও বেগুনী)": dropdownData.outfitColor.options.slice(60, 75),
+        "Pastels, Ivories & Whites (প্যাস্টেল ও সাদা)": dropdownData.outfitColor.options.slice(75, 90),
+        "Neutrals, Metallics & Black (কালো ও মেটালিক)": dropdownData.outfitColor.options.slice(90, 100)
+    }
+};
+
 // Global App State
 const selectionsState = {};
 let activeCharacter = {
@@ -1779,6 +1907,68 @@ let activeCharacter = {
 };
 let savedPrompts = JSON.parse(localStorage.getItem('saved_prompts_v48') || '[]');
 let activeKey = null;
+let activeSubcategory = "All";
+
+function renderSubcategoryTabs(key) {
+    const tabsContainer = document.getElementById('modalSubcatTabs');
+    if (!tabsContainer) return;
+    tabsContainer.innerHTML = "";
+    activeSubcategory = "All";
+
+    let subcats = subCategoryDefinitions[key];
+
+    // If outfitStyle, build subcategories from outfitStylesMap
+    if (key === 'outfitStyle') {
+        const outfit = selectionsState['outfitType'] || "Saree (শাড়ি)";
+        const styles = outfitStylesMap[outfit] || [];
+        subcats = {
+            "Traditional Classic": styles.filter(s => s.includes("Silk") || s.includes("Jamdani") || s.includes("Kanjivaram") || s.includes("Banarasi")),
+            "Modern & Contemporary": styles.filter(s => !s.includes("Silk") && !s.includes("Jamdani") && !s.includes("Kanjivaram") && !s.includes("Banarasi"))
+        };
+    }
+
+    if (!subcats || Object.keys(subcats).length === 0) {
+        tabsContainer.classList.add('hidden');
+        return;
+    }
+    tabsContainer.classList.remove('hidden');
+
+    let totalCount = 0;
+    if (key === 'backgroundSetting') {
+        totalCount = backgroundOptions120.length;
+    } else {
+        const baseField = dropdownData[key];
+        totalCount = baseField ? baseField.options.length : 0;
+    }
+
+    // "All" tab
+    const allTab = document.createElement('button');
+    allTab.className = "modal-subcat-chip active";
+    allTab.innerHTML = `🌟 All (${totalCount})`;
+    allTab.onclick = () => {
+        document.querySelectorAll('.modal-subcat-chip').forEach(c => c.classList.remove('active'));
+        allTab.classList.add('active');
+        activeSubcategory = "All";
+        filterModalOptions();
+    };
+    tabsContainer.appendChild(allTab);
+
+    // Individual category tabs
+    Object.keys(subcats).forEach(catName => {
+        const chip = document.createElement('button');
+        chip.className = "modal-subcat-chip";
+        const count = subcats[catName] ? subcats[catName].length : 0;
+        chip.innerHTML = `${catName} (${count})`;
+        chip.onclick = () => {
+            document.querySelectorAll('.modal-subcat-chip').forEach(c => c.classList.remove('active'));
+            chip.classList.add('active');
+            activeSubcategory = catName;
+            filterModalOptions();
+        };
+        tabsContainer.appendChild(chip);
+    });
+}
+
 
 // Initialize Application
 document.addEventListener('DOMContentLoaded', () => {
@@ -1843,9 +2033,30 @@ function initGrid() {
         card.className = "selector-card";
         card.setAttribute('data-element', field.element);
 
+        // Calculate count and sub-category badge text
+        let countText = "";
+        const subcats = subCategoryDefinitions[key];
+        if (key === 'backgroundSetting') {
+            countText = "121 Options • 8 Categories";
+        } else if (key === 'outfitType') {
+            countText = "14 Categories • 65+ Fabrics";
+        } else if (key === 'outfitStyle') {
+            const currentOutfit = selectionsState['outfitType'] || "Saree (শাড়ি)";
+            const styles = outfitStylesMap[currentOutfit] || [];
+            countText = `${styles.length} Varieties`;
+        } else if (subcats) {
+            const subcatCount = Object.keys(subcats).length;
+            countText = `${field.options.length} Options • ${subcatCount} Sub-Categories`;
+        } else {
+            countText = `${field.options.length} Curated Options`;
+        }
+
         card.innerHTML = `
             <div class="selector-header">
-                <label class="selector-label">${field.label}</label>
+                <div>
+                    <label class="selector-label">${field.label}</label>
+                    <span class="subcat-count-badge">${countText}</span>
+                </div>
                 <span class="element-tag tag-${field.element}">Element ${field.element}</span>
             </div>
             <button onclick="openModal('${key}')" class="selector-trigger">
@@ -1919,7 +2130,17 @@ function openModal(key) {
     document.getElementById('modalTitle').innerText = `SELECT ${field.label.toUpperCase()}`;
     document.getElementById('modalSearchInput').value = "";
     
-    renderModalOptions(field.options);
+    renderSubcategoryTabs(key);
+
+    let initialOptions = field.options;
+    if (key === 'outfitStyle') {
+        const outfit = selectionsState['outfitType'] || "Saree (শাড়ি)";
+        initialOptions = outfitStylesMap[outfit] || ["Standard Fit", "Custom (কাস্টম ডেসক্রিপশন)"];
+    } else if (key === 'backgroundSetting') {
+        initialOptions = backgroundOptions120;
+    }
+
+    renderModalOptions(initialOptions);
     document.getElementById('visualModal').classList.remove('hidden');
 }
 
@@ -1975,17 +2196,25 @@ function renderModalOptions(optionsList) {
 function filterModalOptions() {
     const query = document.getElementById('modalSearchInput').value.toLowerCase().trim();
     const field = dropdownData[activeKey];
-    let optionsList = field.options;
+    let baseList = field.options;
     
     if (activeKey === 'outfitStyle') {
-        const outfit = selectionsState['outfitType'];
-        optionsList = outfitStylesMap[outfit] || ["Standard Fit", "Custom (কাস্টম ডেসক্রিপশন)"];
+        const outfit = selectionsState['outfitType'] || "Saree (শাড়ি)";
+        baseList = outfitStylesMap[outfit] || ["Standard Fit", "Custom (কাস্টম ডেসক্রিপশন)"];
     } else if (activeKey === 'backgroundSetting') {
-        const cat = selectionsState['backgroundCategory'];
-        optionsList = backgroundCategoryMap[cat] || backgroundOptions120;
+        baseList = backgroundOptions120;
     }
 
-    const filtered = optionsList.filter(opt => opt.toLowerCase().includes(query) || (accurateVisuals[opt]?.desc && accurateVisuals[opt].desc.toLowerCase().includes(query)));
+    // Filter by activeSubcategory if active
+    const subcats = subCategoryDefinitions[activeKey];
+    if (subcats && activeSubcategory && activeSubcategory !== "All" && subcats[activeSubcategory]) {
+        baseList = subcats[activeSubcategory];
+    }
+
+    const filtered = baseList.filter(opt => {
+        const matchesQuery = opt.toLowerCase().includes(query) || (accurateVisuals[opt]?.desc && accurateVisuals[opt].desc.toLowerCase().includes(query));
+        return matchesQuery;
+    });
     renderModalOptions(filtered);
 }
 
@@ -2008,10 +2237,20 @@ function selectOption(val) {
         const styles = outfitStylesMap[val] || ["Standard Fit", "Custom (কাস্টম ডেসক্রিপশন)"];
         selectionsState['outfitStyle'] = styles[0];
         updateSelectorUI('outfitStyle');
+        initGrid(); // Refresh cards to update count badges
     } else if (activeKey === 'backgroundCategory') {
         const settings = backgroundCategoryMap[val] || backgroundOptions120;
         selectionsState['backgroundSetting'] = settings[0];
         updateSelectorUI('backgroundSetting');
+    } else if (activeKey === 'backgroundSetting') {
+        // Automatically sync backgroundCategory
+        for (let cat in backgroundCategoryMap) {
+            if (cat !== 'All Backgrounds (একসাথে সকল ১২০টি স্থান)' && backgroundCategoryMap[cat].includes(val)) {
+                selectionsState['backgroundCategory'] = cat;
+                updateSelectorUI('backgroundCategory');
+                break;
+            }
+        }
     }
 
     updateSelectorUI(activeKey);

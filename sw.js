@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prompt-master-v50-cache';
+const CACHE_NAME = 'prompt-master-v60-cache';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -22,6 +22,7 @@ self.addEventListener('activate', (e) => {
       return Promise.all(
         keys.map((key) => {
           if (key !== CACHE_NAME) {
+            console.log('Clearing old cache:', key);
             return caches.delete(key);
           }
         })
@@ -33,6 +34,22 @@ self.addEventListener('activate', (e) => {
 
 self.addEventListener('fetch', (e) => {
   if (e.request.method !== 'GET') return;
+
+  // Network-first for code assets to ensure real-time updates
+  if (e.request.url.includes('.js') || e.request.url.includes('.css') || e.request.url.includes('.html') || e.request.mode === 'navigate') {
+    e.respondWith(
+      fetch(e.request)
+        .then((networkRes) => {
+          if (networkRes && networkRes.status === 200) {
+            const clone = networkRes.clone();
+            caches.open(CACHE_NAME).then((cache) => cache.put(e.request, clone));
+          }
+          return networkRes;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
 
   e.respondWith(
     caches.match(e.request).then((cachedResponse) => {
