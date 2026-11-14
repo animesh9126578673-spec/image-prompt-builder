@@ -1,4 +1,4 @@
-const CACHE_NAME = 'prompt-master-v48-cache';
+const CACHE_NAME = 'prompt-master-v50-cache';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
